@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(199, 202, 221);
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@ body {
   border-radius: 50%;
   border: 5px solid rgb(250, 173, 173);
   position: relative;
-  box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 -15px 15px rgba(255, 255, 255, 0.05);
 }
 
 .number {
@@ -67,15 +67,16 @@ body {
 }
 
 /* .number span {
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translate(-50%);
 } */
 
-/* .one span {
+/* .one span span {
   transform: rotate(-30deg);
-}
-.two span {
+  position: absolute;
+} */
+/* .two span {
   transform: rotate(-60deg);
 }
 .three span {
@@ -114,37 +115,36 @@ body {
   left: 50%;
   bottom: 50%;
   transform-origin: bottom;
+  transform: translate(-50%);
 }
 .hour {
   height: 30%;
   width: 12px;
-  transform: translate(-50%) rotate(0deg);
   border-radius: 50% 50% 0 0;
-  background-color: rgb(221, 52, 52);
+  background-color: rgb(0, 0, 0);
 }
 .minute {
   height: 40%;
   width: 10px;
-  transform: translate(-50%) rotate(230deg);
   border-radius: 50% 50% 0 0;
-  background-color: rgb(214, 109, 109);
+  background-color: rgb(122, 66, 89);
 }
 .second {
   height: 45%;
   width: 4px;
-  transform: translate(-50%) rotate(300deg);
   background-color: rgb(221, 52, 52);
   border-radius: 50% 50% 0 0;
+  z-index: 10;
 }
 .pointer {
   height: 25px;
   width: 25px;
-  background-color: rgb(209, 171, 171);
+  background-color: rgb(221, 52, 52);
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 2px solid rgb(150, 97, 97);
-  box-shadow: -30px -40px -15px -15px rgba(rgba(238, 9, 9, 0.4));
+  border: 2px solid rgb(29, 28, 28);
+  z-index: 1;
 }
