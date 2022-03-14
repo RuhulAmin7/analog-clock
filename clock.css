@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
 }
 .clock {
   min-height: 400px;
@@ -18,7 +18,7 @@ body {
   border-radius: 50%;
   border: 30px solid rgb(13, 22, 41);
   position: relative;
-  box-shadow: 0 0 70px 10px rgba(43, 82, 238, 0.842);
+  box-shadow: 0 0 70px 10px rgba(41, 79, 230, 0.842);
   color: azure;
 }
 /* .clock:after {
